@@ -30,6 +30,12 @@ class Navigator {
         $_choice.on('click', () => {
             $_dropmenu.toggle();
         });
+        // $(document).on('click', (e) => {
+        //     e = e || event;
+        //     if($_dropmenu.is(':visible')) {
+        //         $_dropmenu.hide();
+        //     }
+        // });
         let $_inputbox = $('<input type="text" class="mokou-search-bar-input" placeholder="Open The Door To A Whole New World!!!">');
         this.listenerKeyboard($_inputbox);
         let $_searchBtn = $('<btn class="mokou-search-bar-btn" style="background-color:' + this.getRandomColor() + '"></btn>');
