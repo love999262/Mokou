@@ -19,7 +19,8 @@ class Makou {
         `;
         this.$TPL = $(this.TPL);
         this.setMakou();
-        this.setBackground(436);
+        this.setBackGround(436);
+        this.changeBackGround();
         this.setRipples();
         let navigator = new Navigator();
         let $search = $('.' + this.prefix + 'search');
@@ -32,21 +33,21 @@ class Makou {
     setMakou() {
         $('body').append(this.$TPL);
     }
-    setBackground(totalpic) {
+    setBackGround(totalpic) {
         var _num = Math.round(Math.random() * totalpic);
-        $('.mokou-img').css({
+        $('.' + this.prefix + 'img').css({
             'background-image': 'url(' + this.picDir + _num.toString() + '.jpg)'
         });
     }
     setRipples() {
-        $('.mokou-img').ripples({
+        $('.mokou').ripples({
             resolution: 512,
             dropRadius: 10, //px
             perturbance: 0.01
         });
     }
 
-    eventHandle() {
+    changeBackGround() {
         $(document).on('keydown', (e) => {
             e = e || event;
             let keyCode = e.keyCode;
