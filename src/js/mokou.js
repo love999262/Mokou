@@ -9,7 +9,7 @@ let searchEngines = require('./searchEngines.js');
 class Makou {
     constructor() {
         this.prefix = 'mokou-';
-        this.picDir = 'http://omltgvp37.bkt.clouddn.com/bg';
+        this.picDir = 'http://omltgvp37.bkt.clouddn.com/';
         this.TPL = `
             <div class="mokou">
                 <div class="mokou-img"></div>
@@ -19,6 +19,7 @@ class Makou {
         `;
         this.$TPL = $(this.TPL);
         this.setMakou();
+        this.setIcon(this.picDir + 'icon.ico');
         this.setBackGround(436);
         this.changeBackGround();
         this.setRipples();
@@ -34,11 +35,17 @@ class Makou {
         $('body').append(this.$TPL);
     }
     setBackGround(totalpic) {
-        var _num = Math.round(Math.random() * totalpic);
+        let _num = Math.round(Math.random() * totalpic);
         $('.' + this.prefix + 'img').css({
-            'background-image': 'url(' + this.picDir + _num.toString() + '.jpg)'
+            'background-image': 'url(' + this.picDir + 'bg' + _num.toString() + '.jpg)'
         });
     }
+
+    setIcon(url) {
+        let $_ico = $('<link rel="shortcut icon" href="' + url + '">');
+        $('head').append($_ico);
+    }
+
     setRipples() {
         $('.mokou').ripples({
             resolution: 512,
@@ -61,4 +68,4 @@ class Makou {
         });
     }
 }
-var makou = new Makou();
+let makou = new Makou();
