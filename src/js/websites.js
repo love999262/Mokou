@@ -26,7 +26,8 @@ let websites = {
         nodejscn: 'http://nodejs.cn/',
         vue: 'http://cn.vuejs.org/v2/api/',
         webpackDoc: 'http://webpack.github.io/docs/',
-        React: 'http://reactjs.cn/react/docs/getting-started.html'
+        React: 'http://reactjs.cn/react/docs/getting-started.html',
+        pythonDoc: 'https://docs.python.org/3/'
 
     },
     shopping: {

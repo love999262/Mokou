@@ -20,7 +20,7 @@ class Makou {
         this.$TPL = $(this.TPL);
         this.setMakou();
         this.setIcon(this.picDir + 'mokou.ico');
-        this.setBackGround(436);
+        this.setBackGround(577);
         this.changeBackGround();
         try {
             this.setRipples($('.mokou-img'));
