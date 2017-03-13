@@ -1,3 +1,5 @@
+# [website](https://love999262.github.io/mokou/publish/mokou.html)
+
 # code refactoring
 
 Due to the old project [moe](https://github.com/love999262/moe) use to much unnecessary library and the code is too comolex to rewrite,I make a decision that to open a new project to rewrite it to make up for it.
