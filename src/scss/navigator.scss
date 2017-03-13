@@ -33,9 +33,10 @@
                     height: inherit;
                     float: left;
                     border: 1px solid $btn-border-color;
-                    background: url(../images/down.svg) 2px 10px no-repeat;
+                    background: url(../images/down.svg) 5px 10px no-repeat;
                     background-size: 12px;
                     line-height: 36px;
+                    width: 24px;
                     background-color: $btn-color;
                     cursor: pointer;
                     padding: 6px 8px;

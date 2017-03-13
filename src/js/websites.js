@@ -19,7 +19,15 @@ let websites = {
         stackoverflow: 'http://stackoverflow.com/',
         w3schools: 'http://www.w3schools.com/',
         '$.api': 'http://api.jquery.com/',
-        caniuse: 'http://caniuse.com/'
+        jshint: 'http://jshint.com/',
+        jsfiddle: 'https://jsfiddle.net/',
+        caniuse: 'http://caniuse.com/',
+        babel: 'http://babeljs.io/',
+        nodejscn: 'http://nodejs.cn/',
+        vue: 'http://cn.vuejs.org/v2/api/',
+        webpackDoc: 'http://webpack.github.io/docs/',
+        React: 'http://reactjs.cn/react/docs/getting-started.html'
+
     },
     shopping: {
         taobao: 'https://www.taobao.com/',
@@ -30,9 +38,7 @@ let websites = {
     },
     others: {
         alexa: 'http://www.alexa.com/',
-        jshint: 'http://jshint.com/',
-        jsfiddle: 'https://jsfiddle.net/',
-        babel: 'http://babeljs.io/'
+        'iconfont.cn': 'http://www.iconfont.cn/',
     }
 };
 
