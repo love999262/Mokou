@@ -27,9 +27,10 @@
         height: inherit;
         float: left;
         border: 1px solid #46B8DA;
-        background: url(../images/down.svg) 2px 10px no-repeat;
+        background: url(../images/down.svg) 5px 10px no-repeat;
         background-size: 12px;
         line-height: 36px;
+        width: 24px;
         background-color: #5BC0DE;
         cursor: pointer;
         padding: 6px 8px; }
@@ -48,7 +49,7 @@
         box-shadow: 8px 8px 8px #333; }
         .mokou-search-bar-container-dropmenu-searchengine {
           color: #333333;
-          padding: 10px 20px;
+          padding: 10px 30px;
           border-bottom: 1px solid #DADADA;
           cursor: pointer; }
           .mokou-search-bar-container-dropmenu-searchengine:hover {

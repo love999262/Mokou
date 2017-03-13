@@ -15,8 +15,8 @@ let websites = {
     },
     techonology: {
         github: 'https://github.com/love999262',
-        mail: 'https://exmail.qq.com/',
         stackoverflow: 'http://stackoverflow.com/',
+        gmail: 'https://mail.google.com/mail/u/0/#inbox',
         w3schools: 'http://www.w3schools.com/',
         '$.api': 'http://api.jquery.com/',
         jshint: 'http://jshint.com/',
@@ -37,8 +37,9 @@ let websites = {
         AmazonJP: 'https://www.amazon.co.jp/',
     },
     others: {
+        mail: 'https://exmail.qq.com/',
         alexa: 'http://www.alexa.com/',
-        'iconfont.cn': 'http://www.iconfont.cn/',
+        'iconfont.cn': 'http://www.iconfont.cn/'
     }
 };
 
