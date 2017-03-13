@@ -1,11 +1,11 @@
 'use strict';
-var gulp = require('gulp');
-var path = require('path');
-var sass = require('gulp-sass');
-var eslint = require('gulp-eslint');
-var webpackConfig = require('./webpack.config.js');
-var webpack = require('webpack');
-var paths = {
+const gulp = require('gulp');
+const path = require('path');
+const sass = require('gulp-sass');
+const eslint = require('gulp-eslint');
+const webpackConfig = require('./webpack.config.js');
+const webpack = require('webpack');
+const paths = {
     scripts: ['./src/js/*.js', '!./src/js/*jquery.ripples.js'],
     scss: ['./src/scss/*.scss'],
     css: ['./src/css/*.css']
