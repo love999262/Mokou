@@ -22,7 +22,11 @@ class Makou {
         this.setIcon(this.picDir + 'icon.ico');
         this.setBackGround(436);
         this.changeBackGround();
-        this.setRipples($('.mokou'));
+        try {
+            this.setRipples($('.mokou'));
+        } catch(e) {
+            console.debug(e);
+        }
         let navigator = new Navigator();
         let $search = $('.' + this.prefix + 'search');
         let $_searchEngines = navigator.reseloveSearchEngines(searchEngines.list);
