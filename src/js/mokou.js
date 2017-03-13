@@ -23,7 +23,7 @@ class Makou {
         this.setBackGround(436);
         this.changeBackGround();
         try {
-            this.setRipples($('.mokou'));
+            this.setRipples($('.mokou-img'));
         } catch(e) {
             console.debug(e);
         }
