@@ -4,7 +4,7 @@ let websites = {
         acfun: 'http://www.acfun.tv/',
         Tbus: 'http://games.tgbus.com/pspcn/',
         thwiki: 'http://www.thwiki.cc/',
-        hacg: 'https://www.hacg.li/'
+        hacg: 'https://www.hacg.fi/'
     },
     sns: {
         weibo: 'http://weibo.com/',
