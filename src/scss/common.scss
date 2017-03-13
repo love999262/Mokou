@@ -1,0 +1,21 @@
+$mokou: mokou;
+$b-pink: #FF8EB3;
+$b-blue: #01ADFF;
+$kakuya: #E593C3;
+$dark: #333333;
+$white: #FFFFFF;
+$gray: #DADADA;
+$h: 36px;
+$w: 120px;
+$input-w: 560px;
+$btn-color: #5BC0DE;
+$btn-border-color: #46B8DA;
+$btn-hover-color: #31B0D5;
+$btn-hover-border-color: #269ABC;
+$btn-active-color: #269ABC;
+$btn-active-border-color: #1B6D85;
+$green: #68c867;
+
+@mixin setShadow {
+    box-shadow: 8px 8px 8px #333;
+}

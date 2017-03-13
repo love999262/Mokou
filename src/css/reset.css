@@ -1,0 +1,38 @@
+* {
+  margin: 0;
+  padding: 0;
+  border-radius: none !important;
+  position: relative;
+  list-style-type: none;
+  color: #fff;
+  font-family: "Times New Roman", "microsoft yahei";
+  font-size: 14px;
+  border: 0;
+  border-width: 1px; }
+
+a {
+  text-decoration: none;
+  display: block;
+  width: 100%;
+  height: 100%;
+  color: #333333; }
+  a:hover {
+    background-color: #333333;
+    color: #FFFFFF; }
+
+::selection {
+  background: #777;
+  color: #fff; }
+
+::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+  background-color: #fff; }
+
+::-webkit-scrollbar-track {
+  background-color: #000;
+  background-color: rgba(0, 0, 0, 0.4); }
+
+::-webkit-scrollbar-thumb {
+  border-radius: 16px;
+  background-color: rgba(255, 255, 255, 0.85); }
