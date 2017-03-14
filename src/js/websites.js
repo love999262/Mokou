@@ -40,7 +40,8 @@ let websites = {
     others: {
         mail: 'https://exmail.qq.com/',
         alexa: 'http://www.alexa.com/',
-        'iconfont.cn': 'http://www.iconfont.cn/'
+        'iconfont.cn': 'http://www.iconfont.cn/',
+        qiniu: 'https://portal.qiniu.com/'
     }
 };
 
