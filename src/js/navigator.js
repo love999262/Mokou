@@ -2,6 +2,7 @@ class Navigator {
     constructor() {
         this.prefix = 'mokou-';
         this.searchInterface = 'https://www.baidu.com/s?wd=';
+        this.searchBtnHref = 'https://www.baidu.com/';
     }
 
     reseloveSearchEngines(searchEngines) {
@@ -14,7 +15,7 @@ class Navigator {
         let $_TPL = $(_TPL);
         let $_defbtn = $('<button class="mokou-search-bar-container-btn">' + searchEngines[1].name + '</button>');
         $_defbtn.on('click', () => {
-            window.open(searchEngines[1].href);
+            window.open(this.searchBtnHref);
         });
         let $_dropmenu = $('<ul class="mokou-search-bar-container-dropmenu" style="display:none;"></ul>');
         for (let i = 0; i < searchEngines.length; i++) {
@@ -22,6 +23,7 @@ class Navigator {
             $_list.on('click', () => {
                 $_defbtn.html(searchEngines[i].name);
                 this.searchInterface = searchEngines[i].url;
+                this.searchBtnHref = searchEngines[i].href;
                 $_dropmenu.toggle();
             });
             $_dropmenu.append($_list);
