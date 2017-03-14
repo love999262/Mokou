@@ -4,6 +4,7 @@
         opacity: 0.9;
         text-align: center;
         margin-top: 25vh;
+        z-index: 999;
         &-bar {
             height: $h;
             @include setShadow;

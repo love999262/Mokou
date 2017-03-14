@@ -1,10 +1,10 @@
 require('../scss/reset.scss');
 require('../scss/mokou.scss');
 require('../scss/navigator.scss');
-let ripples = require('./jquery.ripples.js');
-let Navigator = require('./navigator.js');
-let websites = require('./websites.js');
-let searchEngines = require('./searchEngines.js');
+const ripples = require('./jquery.ripples.js');
+const Navigator = require('./navigator.js');
+const websites = require('./websites.js');
+const searchEngines = require('./searchEngines.js');
 
 class Makou {
     constructor() {
@@ -20,10 +20,10 @@ class Makou {
         this.$TPL = $(this.TPL);
         this.setMakou();
         this.setIcon(this.picDir + 'mokou.ico');
-        this.setBackGround(577);
+        this.setBackGround(436);
         this.changeBackGround();
         try {
-            this.setRipples($('.mokou-img'));
+            this.setRipples();
         } catch(e) {
             console.debug(e);
         }
@@ -50,8 +50,17 @@ class Makou {
         $('head').append($_ico);
     }
 
-    setRipples($dom) {
-        $dom.ripples({
+    setRipples() {
+        let $_wrap = $('<div class="wrapper"></div>');
+        $_wrap.css({
+            'position': 'fixed',
+            'top': 0,
+            'left': 0,
+            'right': 0,
+            'bottom': 0
+        });
+        $('.mokou').append($_wrap);
+        $_wrap.ripples({
             resolution: 512,
             dropRadius: 10, //px
             perturbance: 0.01
