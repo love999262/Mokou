@@ -10,6 +10,7 @@ class Makou {
     constructor() {
         this.prefix = 'mokou-';
         this.picDir = 'http://omltgvp37.bkt.clouddn.com/';
+        this.localPicDir = './images/';
         this.TPL = `
             <div class="mokou">
                 <div class="mokou-img"></div>
@@ -42,6 +43,7 @@ class Makou {
         let _num = Math.round(Math.random() * totalpic);
         $('.' + this.prefix + 'img').css({
             'background-image': 'url(' + this.picDir + 'bg' + _num.toString() + '.jpg)'
+            // 'background-image': 'url(' + this.localPicDir + 'bg' + _num.toString() + '.jpg)'
         });
     }
 
