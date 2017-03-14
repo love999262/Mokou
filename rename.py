@@ -1,17 +1,18 @@
 import os
 
-direct = "Z:\\github\\indexNew\\index\\imgsNew"
-last = int(input("输入上次最后一张bg的index:"))
-
-def cgF(dir,index):
-    arrList=[]
-    files = os.listdir(dir)
+last = int(input('输入上次最后一张bg的index:'))
+direct = str(input('输入要转换名称的图片的文件夹的路径:'))
+def changeName(dir, index):
+    imgList = []
+    files = os.listdir(os.path.realpath(dir))
+    print(files)
     start = index
     end = start + len(files)
-    for i in range(start+1,end+1):
-        arrList.append(i)
-    for i in range(len(arrList)):
-        # print(dir+"\\"+str(files[i]))
-        #print("bg" + str(arrList[i]) +".jpg")
-        os.rename(dir+"\\"+str(files[i]),dir+"\\"+"bg"+str(arrList[i]) +".jpg")
-cgF(direct,last)
+    for i in range(start+1, end+1):
+        imgList.append(i)
+    for j in range(len(imgList)):
+        _originName = os.path.realpath(dir) + '/' +  files[j]
+        _laterName = os.path.realpath(dir) + '/' + 'bg' + str(imgList[j]) + '.jpg'
+        print(_laterName)
+        os.rename(_originName, _laterName)
+changeName(direct, last)
