@@ -11,7 +11,8 @@ let websites = {
         zhihu: 'https://www.zhihu.com/',
         douban: 'https://www.douban.com/',
         twitter: 'https://twitter.com/',
-        linkedin: 'https://www.linkedin.com/'
+        linkedin: 'https://www.linkedin.com/',
+        V2EX: 'https://www.v2ex.com/'
     },
     techonology: {
         github: 'https://github.com/love999262',
