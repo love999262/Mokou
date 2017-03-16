@@ -92,9 +92,7 @@
       .mokou-search-panel-nav > * {
         height: 36px;
         line-height: 36px;
-        border: 1px solid #DADADA;
-        margin-left: -1px;
-        margin-top: -1px; }
+        border: 1px solid #DADADA; }
       .mokou-search-panel-nav li {
         flex: 1;
         cursor: pointer;

@@ -9,6 +9,10 @@ module.exports = {
         path: path.resolve(__dirname, 'publish'),
         filename: 'mokou.min.js'
     },
+    devtool: 'source-map',
+    devServer: {
+        publicPath: "./dist/",
+    },
     module: {
         loaders: [{
             test: /\.scss$/,
@@ -38,9 +42,14 @@ module.exports = {
             jQuery: "jquery"
         }),
         new webpack.optimize.UglifyJsPlugin({
+            sourceMap: true,
             compress: {
                 warnings: false
             }
         })
+        // new webpack.optimize.UglifyJsPlugin({
+
+        // }),
+
     ]
 };

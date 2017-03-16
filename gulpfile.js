@@ -23,7 +23,7 @@ gulp.task('lint', function() {
         .pipe(eslint.format());
 });
 
-gulp.task('webpack', function() {
+gulp.task('webpack',['lint'], function() {
     webpack(webpackConfig, function(err, stats) {
         if (err) {
             console.log(err);

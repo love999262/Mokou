@@ -8,7 +8,8 @@
   font-family: "Times New Roman", "microsoft yahei";
   font-size: 14px;
   border: 0;
-  border-width: 1px; }
+  border-width: 1px;
+  outline-color: #DADADA; }
 
 a {
   text-decoration: none;
@@ -19,6 +20,9 @@ a {
   a:hover {
     background-color: #333333;
     color: #FFFFFF; }
+
+li {
+  text-align: center; }
 
 ::selection {
   background: #777;
