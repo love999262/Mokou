@@ -28,7 +28,8 @@ let websites = {
         vue: 'http://cn.vuejs.org/v2/api/',
         webpackDoc: 'http://webpack.github.io/docs/',
         React: 'http://reactjs.cn/react/docs/getting-started.html',
-        pythonDoc: 'https://docs.python.org/3/'
+        pythonDoc: 'https://docs.python.org/3/',
+        owasp: 'https://www.owasp.org'
 
     },
     shopping: {
