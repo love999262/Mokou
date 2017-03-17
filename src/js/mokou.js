@@ -53,7 +53,7 @@ class Makou {
         // });
         $search.append($_searchEngines);
         $search.append($_websites);
-        this.createPlayer();
+        // this.createPlayer();
     }
         
     setMakou() {
