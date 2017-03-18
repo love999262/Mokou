@@ -62,8 +62,8 @@ class Makou {
     setBackGround(totalpic) {
         let _num = Math.round(Math.random() * totalpic);
         $('.' + this.prefix + 'img').css({
-            'background-image': 'url(' + this.picDir + 'bg' + _num.toString() + '.jpg)'
-            // 'background-image': 'url(' + this.localPicDir + 'bg' + _num.toString() + '.jpg)'
+            // 'background-image': 'url(' + this.picDir + 'bg' + _num.toString() + '.jpg)'
+            'background-image': 'url(' + this.localPicDir + 'bg' + _num.toString() + '.jpg)'
         });
     }
 
