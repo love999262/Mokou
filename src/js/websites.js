@@ -4,6 +4,7 @@ let websites = {
         acfun: 'http://www.acfun.tv/',
         Tbus: 'http://games.tgbus.com/pspcn/',
         thwiki: 'http://www.thwiki.cc/',
+        pixiv: 'http://www.pixiv.net/',
         hacg: 'https://www.hacg.fi/'
     },
     sns: {
@@ -37,7 +38,7 @@ let websites = {
         JD: 'http://www.jd.com/',
         Amazon: 'http://www.amazon.cn/',
         smzdm: 'http://www.smzdm.com/',
-        AmazonJP: 'https://www.amazon.co.jp/',
+        AmazonJP: 'https://www.amazon.co.jp/'
     },
     others: {
         mail: 'https://exmail.qq.com/',

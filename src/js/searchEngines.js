@@ -5,6 +5,10 @@ let searchEngines = {
             'url': 'https://developer.mozilla.org/zh-CN/search?q=',
             'href': 'https://developer.mozilla.org/zh-CN/'
         },
+        { 'name': '谷歌翻译', 'url': 'http://translate.google.cn/#en/zh-CN/', 'href': 'https://translate.google.cn/' },
+        { 'name': 'pixiv', 'url': 'http://www.pixiv.net/search.php?s_mode=s_tag&word=', 'href': ' http://www.pixiv.net' },
+        { 'name': 'pixivid', 'url': 'http://www.pixiv.net/member_illust.php?mode=medium&illust_id=', 'href': ' http://www.pixiv.net' },
+        { 'name': 'pixiv18', 'url': 'http://www.pixiv.net/search.php?s_mode=s_tag&r18=', 'href': ' http://www.pixiv.net' },
         { 'name': 'npmjs', 'url': 'https://www.npmjs.com/package/', 'href': 'https://www.npmjs.com/package/package' },
         { 'name': '谷歌镜像', 'url': 'http://soguge.com/search?hl=zh-CN&q=', 'href': 'http://www.google.com/' },
         { 'name': 'bing', 'url': 'http://global.bing.com/search?q=', 'href': 'http://global.bing.com/' },
@@ -15,8 +19,7 @@ let searchEngines = {
             'url': 'https://zh.wikipedia.org/w/index.php?search=',
             'href': 'https://zh.wikipedia.org/wiki/Wikipedia:首页'
         },
-        { 'name': 'wikipedia', 'url': 'https://en.wikipedia.org/wiki/', 'href': 'https://www.wikipedia.org/' },
-        { 'name': '谷歌翻译', 'url': 'http://translate.google.cn/#en/zh-CN/', 'href': 'https://translate.google.cn/' }, {
+        { 'name': 'wikipedia', 'url': 'https://en.wikipedia.org/wiki/', 'href': 'https://www.wikipedia.org/' }, {
             'name': '谷歌搜图',
             'url': 'https://www.google.com.hk/search?newwindow=1&safe=strict&hl=zh-CN&site=webhp&tbm=isch&sa=1&q=',
             'href': 'https://www.google.com/'
