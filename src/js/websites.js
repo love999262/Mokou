@@ -42,6 +42,7 @@ let websites = {
     },
     others: {
         mail: 'https://exmail.qq.com/',
+        gmail: 'https://mail.google.com/mail/u/0/#inbox',
         alexa: 'http://www.alexa.com/',
         'iconfont.cn': 'http://www.iconfont.cn/',
         qiniu: 'https://portal.qiniu.com/'
