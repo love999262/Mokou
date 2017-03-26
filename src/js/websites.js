@@ -7,7 +7,7 @@ let websites = {
         pixiv: 'http://www.pixiv.net/',
         hacg: 'https://www.hacg.fi/'
     },
-    sns: {
+    SNS: {
         weibo: 'http://weibo.com/',
         zhihu: 'https://www.zhihu.com/',
         douban: 'https://www.douban.com/',
@@ -15,7 +15,7 @@ let websites = {
         linkedin: 'https://www.linkedin.com/',
         V2EX: 'https://www.v2ex.com/'
     },
-    techonology: {
+    Techonology: {
         github: 'https://github.com/love999262',
         stackoverflow: 'http://stackoverflow.com/',
         gmail: 'https://mail.google.com/mail/u/0/#inbox',
@@ -33,18 +33,30 @@ let websites = {
         owasp: 'https://www.owasp.org'
 
     },
-    shopping: {
+    Shopping: {
         taobao: 'https://www.taobao.com/',
         JD: 'http://www.jd.com/',
         Amazon: 'http://www.amazon.cn/',
         smzdm: 'http://www.smzdm.com/',
         AmazonJP: 'https://www.amazon.co.jp/'
     },
-    others: {
+    English: {
+        bbc: 'http://www.bbc.co.uk/',
+        voa: 'http://www.voa.com/',
+        usatoday: 'http://www.usatoday.com/',
+        latimes: 'http://www.latimes.com/',
+        nytimes: 'http://www.nytimes.com/',
+        washingtonpost: 'http://www.washingtonpost.com/',
+        wsj: 'http://www.wsj.com/',
+        nydailynews: 'http://www.nydailynews.com/',
+        nypost: 'http://www.nypost.com/'
+    },
+    Others: {
         mail: 'https://exmail.qq.com/',
         gmail: 'https://mail.google.com/mail/u/0/#inbox',
-        alexa: 'http://www.alexa.com/',
         'iconfont.cn': 'http://www.iconfont.cn/',
+        giphy: 'http://giphy.com/',
+        alexa: 'http://www.alexa.com/',
         qiniu: 'https://portal.qiniu.com/'
     }
 };
