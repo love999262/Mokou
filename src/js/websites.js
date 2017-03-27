@@ -53,6 +53,7 @@ let websites = {
     },
     Others: {
         mail: 'https://exmail.qq.com/',
+        u2b: 'https://www.youtube.com/',
         gmail: 'https://mail.google.com/mail/u/0/#inbox',
         'iconfont.cn': 'http://www.iconfont.cn/',
         giphy: 'http://giphy.com/',
