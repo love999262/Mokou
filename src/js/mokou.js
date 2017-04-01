@@ -24,6 +24,7 @@ class Makou {
         this.setIcon(this.picDir + 'mokou.ico');
         this.setBackGround(583);
         this.changeBackGround();
+        this.setBackVideo();
         try {
             this.setRipples();
         } catch(e) {
@@ -65,6 +66,11 @@ class Makou {
             'background-image': 'url(' + this.picDir + 'bg' + _num.toString() + '.jpg)'
             // 'background-image': 'url(' + this.localPicDir + 'bg' + _num.toString() + '.jpg)'
         });
+    }
+
+    setBackVideo(url) {
+        var _video = $('<video class="' + this.prefix + 'video" src="http://omltgvp37.bkt.clouddn.com/yaorenmao.mp4" autoplay="autoplay" loop="loop"></video>');
+        $('.mokou').append(_video);
     }
 
     setIcon(url) {
