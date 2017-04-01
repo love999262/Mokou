@@ -10,7 +10,7 @@ const searchEngines = require('./searchEngines.js');
 class Makou {
     constructor() {
         this.prefix = 'mokou-';
-        this.picDir = 'http://omltgvp37.bkt.clouddn.com/';
+        this.qiniu = 'http://omltgvp37.bkt.clouddn.com/';
         this.localPicDir = './images/';
         this.TPL = `
             <div class="mokou">
@@ -21,7 +21,7 @@ class Makou {
         `;
         this.$TPL = $(this.TPL);
         this.setMakou();
-        this.setIcon(this.picDir + 'mokou.ico');
+        this.setIcon(this.qiniu + 'mokou.ico');
         this.setBackGround(583);
         this.changeBackGround();
         this.setBackVideo();
@@ -63,13 +63,14 @@ class Makou {
     setBackGround(totalpic) {
         let _num = Math.round(Math.random() * totalpic);
         $('.' + this.prefix + 'img').css({
-            'background-image': 'url(' + this.picDir + 'bg' + _num.toString() + '.jpg)'
+            'background-image': 'url(' + this.qiniu + 'bg' + _num.toString() + '.jpg)'
             // 'background-image': 'url(' + this.localPicDir + 'bg' + _num.toString() + '.jpg)'
         });
     }
 
     setBackVideo(url) {
-        var _video = $('<video class="' + this.prefix + 'video" src="http://omltgvp37.bkt.clouddn.com/yaorenmao.mp4" autoplay="autoplay" loop="loop"></video>');
+        let _num = Math.ceil(Math.random() * 2);
+        var _video = $('<video class="' + this.prefix + 'video" src="' + this.qiniu + 'bg-video' + _num.toString() + '.mp4" autoplay="autoplay" loop="loop"></video>');
         $('.mokou').append(_video);
     }
 
