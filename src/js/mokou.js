@@ -22,9 +22,9 @@ class Makou {
         this.$TPL = $(this.TPL);
         this.setMakou();
         this.setIcon(this.qiniu + 'mokou.ico');
-        this.setBackGround(583);
+        this.setBackGround(687);
         this.changeBackGround();
-        this.setBackVideo();
+        // this.setBackVideo();
         try {
             this.setRipples();
         } catch(e) {
@@ -60,6 +60,7 @@ class Makou {
     setMakou() {
         $('body').append(this.$TPL);
     }
+    
     setBackGround(totalpic) {
         let _num = Math.round(Math.random() * totalpic);
         $('.' + this.prefix + 'img').css({

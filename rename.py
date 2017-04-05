@@ -8,7 +8,7 @@ def changeName(dir, index):
     print(files)
     start = index
     end = start + len(files)
-    for i in range(start+1, end+1):
+    for i in range(start + 1, end + 1):
         imgList.append(i)
     for j in range(len(imgList)):
         _originName = os.path.realpath(dir) + '/' +  files[j]
