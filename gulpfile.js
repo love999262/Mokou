@@ -6,7 +6,7 @@ const eslint = require('gulp-eslint');
 const webpackConfig = require('./webpack.config.js');
 const webpack = require('webpack');
 const paths = {
-    scripts: ['./src/js/*.js', '!./src/js/*jquery.ripples.js'],
+    scripts: ['./src/js/*.js', '!./src/js/*jquery.ripples.js', '!./src/js/*min*'],
     scss: ['./src/scss/*.scss'],
     css: ['./src/css/*.css']
 };
