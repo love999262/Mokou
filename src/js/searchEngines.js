@@ -6,6 +6,8 @@ let searchEngines = {
             'href': 'https://developer.mozilla.org/zh-CN/'
         },
         { 'name': '谷歌翻译', 'url': 'http://translate.google.cn/#en/zh-CN/', 'href': 'https://translate.google.cn/' },
+        { 'name': 'findicons', 'url': 'http://findicons.com/search/', 'href': 'http://findicons.com/' },
+        { 'name': 'konachan', 'url': 'http://konachan.net/post?tags=', 'href': 'http://konachan.net/' },
         { 'name': 'pixiv', 'url': 'http://www.pixiv.net/search.php?s_mode=s_tag&word=', 'href': ' http://www.pixiv.net' },
         { 'name': 'pixivid', 'url': 'http://www.pixiv.net/member_illust.php?mode=medium&illust_id=', 'href': ' http://www.pixiv.net' },
         { 'name': 'pixiv18', 'url': 'http://www.pixiv.net/search.php?s_mode=s_tag&r18=1&word=', 'href': ' http://www.pixiv.net' },
