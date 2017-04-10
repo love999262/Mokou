@@ -1,12 +1,12 @@
 require('../scss/reset.scss');
 require('../scss/mokou.scss');
 require('../scss/navigator.scss');
-const ripples = require('./jquery.ripples.js');
+// const ripples = require('./jquery.ripples.js');
 const Navigator = require('./navigator.js');
 const websites = require('./websites.js');
 const searchEngines = require('./searchEngines.js');
 // const mCustomScrollbar = require('./jquery.mCustomScrollbar.min.js');
-require('perfect-scrollbar/jquery')($);
+// require('perfect-scrollbar/jquery')($);
 // const Aplayer = require('Aplayer');
 
 class Makou {
@@ -53,8 +53,8 @@ class Makou {
     setBackGround(totalpic) {
         let _num = Math.round(Math.random() * totalpic);
         $('.' + this.prefix + 'img').css({
-            // 'background-image': 'url(' + this.qiniu + 'bg' + _num.toString() + '.jpg)'
-            'background-image': 'url(' + this.localPicDir + 'bg' + _num.toString() + '.jpg)'
+            'background-image': 'url(' + this.qiniu + 'bg' + _num.toString() + '.jpg)'
+            // 'background-image': 'url(' + this.localPicDir + 'bg' + _num.toString() + '.jpg)'
         });
     }
 
