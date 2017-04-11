@@ -75,7 +75,9 @@ class Navigator {
     }
 
     ifSearch(val) {
-        window.open(this.searchInterface + val);
+        let _decodeVal = decodeURIComponent(val);
+        console.log(_decodeVal);
+        window.open(this.searchInterface + _decodeVal);
     }
 
     listenerKeyboard($dom) {
