@@ -76,7 +76,7 @@ class Navigator {
 
     ifSearch(val) {
         let _decodeVal = decodeURIComponent(val);
-        console.log(_decodeVal);
+        console.log(this.searchInterface + _decodeVal);
         window.open(this.searchInterface + _decodeVal);
     }
 
