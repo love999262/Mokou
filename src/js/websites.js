@@ -38,6 +38,7 @@ let websites = {
         JD: 'http://www.jd.com/',
         Amazon: 'http://www.amazon.cn/',
         smzdm: 'http://www.smzdm.com/',
+        steam: 'http://store.steampowered.com/',
         AmazonJP: 'https://www.amazon.co.jp/'
     },
     English: {
