@@ -57,6 +57,7 @@ let websites = {
         u2b: 'https://www.youtube.com/',
         gmail: 'https://mail.google.com/mail/u/0/#inbox',
         'iconfont.cn': 'http://www.iconfont.cn/',
+        tinypng: 'https://tinypng.com/',
         giphy: 'http://giphy.com/',
         alexa: 'http://www.alexa.com/',
         qiniu: 'https://portal.qiniu.com/'

@@ -24,7 +24,7 @@ class Makou {
         this.$TPL = $(this.TPL);
         this.setMakou();
         this.setIcon(this.qiniu + 'mokou.ico');
-        this.setBackGround(687);
+        this.setBackGround(688);
         this.changeBackGround();
         // this.setBackVideo();
         // try {
