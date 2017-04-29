@@ -22,7 +22,7 @@ class Makou {
             </div>
         `;
         this.totalpicLength = 709;
-        // this.isLocalPic = true;
+        this.isLocalPic = true;
         this.$TPL = $(this.TPL);
         this.setMakou();
         this.setIcon(this.qiniu + 'mokou.ico');
