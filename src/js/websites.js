@@ -7,6 +7,7 @@ let websites = {
         pixiv: 'http://www.pixiv.net/',
         saucenao: 'http://saucenao.com/',
         iqdb: 'http://iqdb.org/',
+        safebooru: 'http://safebooru.org/',
         tineye:'https://www.tineye.com/',
         hacg: 'https://www.hacg.fi/'
     },
