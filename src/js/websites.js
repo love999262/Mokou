@@ -5,6 +5,9 @@ let websites = {
         Tbus: 'http://games.tgbus.com/pspcn/',
         thwiki: 'http://www.thwiki.cc/',
         pixiv: 'http://www.pixiv.net/',
+        saucenao: 'http://saucenao.com/',
+        iqdb: 'http://iqdb.org/',
+        tineye:'https://www.tineye.com/',
         hacg: 'https://www.hacg.fi/'
     },
     SNS: {

@@ -24,7 +24,7 @@ class Makou {
         this.$TPL = $(this.TPL);
         this.setMakou();
         this.setIcon(this.qiniu + 'mokou.ico');
-        this.setBackGround(690);
+        this.setBackGround(709, false);//total,islocal
         this.changeBackGround();
         // this.setBackVideo();
         // try {
@@ -50,12 +50,20 @@ class Makou {
         $('body').append(this.$TPL);
     }
     
-    setBackGround(totalpic) {
+    setBackGround(totalpic, isLocal) {
         let _num = Math.round(Math.random() * totalpic);
-        $('.' + this.prefix + 'img').css({
-            'background-image': 'url(' + this.qiniu + 'bg' + _num.toString() + '.jpg)'
-            // 'background-image': 'url(' + this.localPicDir + 'bg' + _num.toString() + '.jpg)'
-        });
+        if(isLocal) {
+            $('.' + this.prefix + 'img').css({
+                // 'background-image': 'url(' + this.qiniu + 'bg' + _num.toString() + '.jpg)'
+                'background-image': 'url(' + this.localPicDir + 'bg' + _num.toString() + '.jpg)'
+            });
+        } else {
+            $('.' + this.prefix + 'img').css({
+                'background-image': 'url(' + this.qiniu + 'bg' + _num.toString() + '.jpg)'
+                // 'background-image': 'url(' + this.localPicDir + 'bg' + _num.toString() + '.jpg)'
+            });
+        }
+
     }
 
     setBackVideo(url) {
