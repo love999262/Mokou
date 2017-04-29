@@ -21,10 +21,12 @@ class Makou {
                 </div>
             </div>
         `;
+        this.totalpicLength = 709;
+        // this.isLocalPic = true;
         this.$TPL = $(this.TPL);
         this.setMakou();
         this.setIcon(this.qiniu + 'mokou.ico');
-        this.setBackGround(709, true);//total,islocal
+        this.setBackGround(this.totalpicLength, this.isLocalPic); // total, islocal
         this.changeBackGround();
         // this.setBackVideo();
         // try {
@@ -51,7 +53,6 @@ class Makou {
     }
     
     setBackGround(totalpic, isLocal) {
-        isLocal = false;
         let _num = Math.round(Math.random() * totalpic);
         if(isLocal) {
             $('.' + this.prefix + 'img').css({
@@ -102,7 +103,7 @@ class Makou {
             switch (keyCode) {
                 case 192:
                     if ($('.' + this.prefix + 'search-bar-input').is(':focus') === false) {
-                        this.setBackGround(709, true);
+                        this.setBackGround(this.totalpicLength, this.isLocalPic);
                     }
                     break;
             }      
