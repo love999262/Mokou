@@ -28,6 +28,7 @@ let websites = {
         jshint: 'http://jshint.com/',
         jsfiddle: 'https://jsfiddle.net/',
         caniuse: 'http://caniuse.com/',
+        jsonlint: 'https://jsonlint.com/',
         babel: 'http://babeljs.io/',
         nodejscn: 'http://nodejs.cn/',
         vue: 'http://cn.vuejs.org/v2/api/',
