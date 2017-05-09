@@ -3,13 +3,14 @@ let websites = {
         bilibili: 'http://www.bilibili.com',
         u2b: 'https://www.youtube.com/',
         acfun: 'http://www.acfun.tv/',
-        Tbus: 'http://games.tgbus.com/pspcn/',
         thwiki: 'http://www.thwiki.cc/',
         pixiv: 'http://www.pixiv.net/',
+        hpoi: 'http://www.hpoi.net/',
         saucenao: 'http://saucenao.com/',
         iqdb: 'http://iqdb.org/',
         safebooru: 'http://safebooru.org/',
         tineye: 'https://www.tineye.com/',
+        Tbus: 'http://games.tgbus.com/pspcn/',
         hacg: 'https://www.hacg.fi/'
     },
     SNS: {
