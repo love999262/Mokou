@@ -14,7 +14,7 @@ module.exports = {
         publicPath: "./dist/",
     },
     module: {
-        loaders: [{
+        rules: [{
             test: /\.scss$/,
             use: [
                 'style-loader',
@@ -22,6 +22,15 @@ module.exports = {
                 'postcss-loader',
                 'sass-loader'
             ]
+        }, {
+            enforce: "pre",
+            test: /\.js$/,
+            exclude: /node_modules/,
+            loader: "eslint-loader",
+            options: {
+                // quiet: true,
+                failOnError: true
+            }
         }, {
             test: /\.js$/,
             loader: 'babel-loader',
@@ -35,21 +44,19 @@ module.exports = {
         }]
     },
     plugins: [
+        new webpack.optimize.UglifyJsPlugin({
+            sourceMap: true,
+            compress: {
+                warnings: false,
+                drop_debugger: true,
+                // drop_console: true
+            }
+        }),
         new webpack.ProvidePlugin({
             $: "jquery",
             jquery: "jquery",
             "window.jQuery": "jquery",
             jQuery: "jquery"
-        }),
-        new webpack.optimize.UglifyJsPlugin({
-            sourceMap: true,
-            compress: {
-                warnings: false
-            }
         })
-        // new webpack.optimize.UglifyJsPlugin({
-
-        // }),
-
     ]
 };

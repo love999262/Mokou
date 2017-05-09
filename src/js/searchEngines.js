@@ -5,6 +5,7 @@ let searchEngines = {
             'url': 'https://developer.mozilla.org/zh-CN/search?q=',
             'href': 'https://developer.mozilla.org/zh-CN/'
         },
+        { 'name': 'bilibili', 'url': 'http://search.bilibili.com/all?keyword=', 'href': 'http://search.bilibili.com/' },
         { 'name': 'github', 'url': 'https://github.com/search?utf8=%E2%9C%93&q=', 'href': 'https://github.com/' },
         { 'name': '谷歌翻译', 'url': 'http://translate.google.cn/#en/zh-CN/', 'href': 'https://translate.google.cn/' },
         { 'name': 'steam', 'url': 'http://store.steampowered.com/search/?&term=', 'href': 'http://store.steampowered.com/' },

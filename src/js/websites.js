@@ -1,6 +1,7 @@
 let websites = {
     ACG: {
         bilibili: 'http://www.bilibili.com',
+        u2b: 'https://www.youtube.com/',
         acfun: 'http://www.acfun.tv/',
         Tbus: 'http://games.tgbus.com/pspcn/',
         thwiki: 'http://www.thwiki.cc/',
@@ -8,7 +9,7 @@ let websites = {
         saucenao: 'http://saucenao.com/',
         iqdb: 'http://iqdb.org/',
         safebooru: 'http://safebooru.org/',
-        tineye:'https://www.tineye.com/',
+        tineye: 'https://www.tineye.com/',
         hacg: 'https://www.hacg.fi/'
     },
     SNS: {
@@ -22,7 +23,6 @@ let websites = {
     Techonology: {
         github: 'https://github.com/love999262',
         stackoverflow: 'http://stackoverflow.com/',
-        gmail: 'https://mail.google.com/mail/u/0/#inbox',
         w3schools: 'http://www.w3schools.com/',
         '$.api': 'http://api.jquery.com/',
         jshint: 'http://jshint.com/',
@@ -43,6 +43,7 @@ let websites = {
         JD: 'http://www.jd.com/',
         Amazon: 'http://www.amazon.cn/',
         smzdm: 'http://www.smzdm.com/',
+        moebuy: 'http://www.030buy.net/',
         steam: 'http://store.steampowered.com/',
         AmazonJP: 'https://www.amazon.co.jp/'
     },
@@ -58,8 +59,8 @@ let websites = {
         nypost: 'http://www.nypost.com/'
     },
     Others: {
-        mail: 'https://exmail.qq.com/',
-        u2b: 'https://www.youtube.com/',
+        exmail: 'https://exmail.qq.com/',
+        hotmail: 'https://outlook.live.com/owa/',
         gmail: 'https://mail.google.com/mail/u/0/#inbox',
         'iconfont.cn': 'http://www.iconfont.cn/',
         tinypng: 'https://tinypng.com/',
