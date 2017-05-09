@@ -127,14 +127,20 @@
                     cursor: pointer;
                     padding: 0 4px;
                 }
-                &-list-title {
-                    background-color: $green;
-                }
                 &-list {
                     color: $dark;
                     &:hover {
                         background-color: $dark;
                         color: $white;
+                    }
+                }
+                &-list-title {
+                    background-color: $green;
+                    &:hover {
+                        & ~ li {
+                            background-color: $dark;
+                            color: $white;
+                        }
                     }
                 }
             }
