@@ -130,17 +130,23 @@
                 &-list {
                     color: $dark;
                     &:hover {
-                        background-color: $dark;
-                        color: $white;
+                        background-color: $hover !important;
+                        color: $hover-font !important;
                     }
                 }
                 &-list-title {
                     background-color: $green;
-                    &:hover {
-                        & ~ li {
-                            background-color: $dark;
-                            color: $white;
-                        }
+                    // &:hover {
+                    //     & ~ li {
+                    //         background-color: $dark;
+                    //         color: $white;
+                    //     }
+                    // }
+                }
+                &:hover {
+                    li.mokou-search-panel-nav-list {
+                        background-color: $list-hover;
+                        color: $list-hover-font;
                     }
                 }
             }

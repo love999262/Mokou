@@ -1,6 +1,6 @@
 $mokou: mokou;
-$b-pink: #FF8EB3;
-$b-blue: #01ADFF;
+$b-pink: #F25D8E;
+$b-blue: #00A1D6;
 $kakuya: #E593C3;
 $dark: #333333;
 $white: #FFFFFF;
@@ -17,7 +17,10 @@ $btn-active-border-color: #1B6D85;
 $green: #68c867;
 $mokou-red: #890900;
 $kaguya-pink: #d6728f;
-
+$list-hover: $dark;
+$list-hover-font: $white;
+$hover: $b-pink;
+$hover-font: $white;
 @mixin setShadow {
     box-shadow: 8px 8px 8px #333;
 }
