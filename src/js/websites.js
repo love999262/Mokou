@@ -11,6 +11,8 @@ let websites = {
         safebooru: 'http://safebooru.org/',
         tineye: 'https://www.tineye.com/',
         Tbus: 'http://games.tgbus.com/pspcn/',
+        dilidili: 'http://www.dilidili.wang/',
+        osu: 'https://osu.ppy.sh/',
         hacg: 'https://www.hacg.fi/'
     },
     SNS: {
@@ -62,6 +64,7 @@ let websites = {
     Others: {
         exmail: 'https://exmail.qq.com/',
         hotmail: 'https://outlook.live.com/owa/',
+        icloud: 'https://www.icloud.com',
         gmail: 'https://mail.google.com/mail/u/0/#inbox',
         'iconfont.cn': 'http://www.iconfont.cn/',
         tinypng: 'https://tinypng.com/',

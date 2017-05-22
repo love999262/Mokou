@@ -17,6 +17,7 @@ class Makou {
         this.totalpicLength = 713;
         this.setMokou();
         this.setIcon(this.qiniu + 'mokou.ico');
+        this.isLocalPic = true;
         this.setBackGround(this.totalpicLength, this.isLocalPic); // total, islocal
         this.navigator = new Navigator();
         let $search = $('.' + this.prefix + '-search');
