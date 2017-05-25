@@ -26,6 +26,8 @@ let websites = {
     Techonology: {
         github: 'https://github.com/love999262',
         stackoverflow: 'http://stackoverflow.com/',
+        typescript: 'https://www.typescriptlang.org/',
+        tscndoc: 'https://www.tslang.cn/docs/tutorial.html',
         w3schools: 'http://www.w3schools.com/',
         '$.api': 'http://api.jquery.com/',
         jshint: 'http://jshint.com/',
