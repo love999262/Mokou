@@ -2,6 +2,9 @@ let websites = {
     ACG: {
         bilibili: 'http://www.bilibili.com',
         u2b: 'https://www.youtube.com/',
+        steam: 'http://store.steampowered.com/',
+        steamCN: 'https://steamcn.com/forum.php',
+        bangumi: 'http://bangumi.tv/',
         acfun: 'http://www.acfun.tv/',
         thwiki: 'http://www.thwiki.cc/',
         pixiv: 'http://www.pixiv.net/',
@@ -13,18 +16,23 @@ let websites = {
         Tbus: 'http://games.tgbus.com/pspcn/',
         dilidili: 'http://www.dilidili.wang/',
         osu: 'https://osu.ppy.sh/',
-        hacg: 'https://www.hacg.fi/'
+        sankakucomplex: 'https://chan.sankakucomplex.com/',
+        hacg: 'https://www.hacg.fi/',
+        steamcard: 'http://www.steamcardexchange.net/'
     },
     SNS: {
         weibo: 'http://weibo.com/',
         zhihu: 'https://www.zhihu.com/',
+        quora: 'https://www.quora.com/#',
         douban: 'https://www.douban.com/',
         twitter: 'https://twitter.com/',
         linkedin: 'https://www.linkedin.com/',
+        weixin: 'https://wx.qq.com/',
         V2EX: 'https://www.v2ex.com/'
     },
     Techonology: {
         github: 'https://github.com/love999262',
+        gitbooks: 'https://www.gitbook.com/',
         stackoverflow: 'http://stackoverflow.com/',
         typescript: 'https://www.typescriptlang.org/',
         tscndoc: 'https://www.tslang.cn/docs/tutorial.html',
@@ -49,7 +57,6 @@ let websites = {
         Amazon: 'http://www.amazon.cn/',
         smzdm: 'http://www.smzdm.com/',
         moebuy: 'http://www.030buy.net/',
-        steam: 'http://store.steampowered.com/',
         AmazonJP: 'https://www.amazon.co.jp/'
     },
     English: {

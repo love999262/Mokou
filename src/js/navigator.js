@@ -52,7 +52,8 @@ class Navigator {
     }
 
     ifSearch(val) {
-        let _decodeVal = decodeURIComponent(val);
+        let _val = val.replace('%', '%25');
+        let _decodeVal = decodeURIComponent(_val);
         console.log(this.searchInterface + _decodeVal);
         window.open(this.searchInterface + _decodeVal);
     }

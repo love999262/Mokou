@@ -3,8 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="f63f71c9-61cd-4f24-91de-edd67ae0e042" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/publish/mokou.min.js" afterPath="$PROJECT_DIR$/publish/mokou.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/js/websites.js" afterPath="$PROJECT_DIR$/src/js/websites.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/publish/mokou.min.js.map" afterPath="$PROJECT_DIR$/publish/mokou.min.js.map" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/js/mokou.js" afterPath="$PROJECT_DIR$/src/js/mokou.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/scss/reset.scss" afterPath="$PROJECT_DIR$/src/scss/reset.scss" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -36,6 +37,13 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/rename.py" />
+      </list>
+    </option>
   </component>
   <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
   <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
@@ -113,14 +121,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/rename.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/rename.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
