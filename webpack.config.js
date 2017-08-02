@@ -2,16 +2,21 @@ const webpack = require('webpack');
 const path = require('path');
 
 module.exports = {
-    entry: [
-        path.resolve(__dirname, './src/js/mokou.js')
-    ],
+    entry: {
+        app: [
+            path.resolve(__dirname, './src/app.js')
+        ]
+    },
     output: {
         path: path.resolve(__dirname, 'publish'),
+        publicPath:"/assets/",
         filename: 'mokou.min.js'
     },
     devtool: 'source-map',
     devServer: {
-        publicPath: "./dist/",
+        contentBase: "./publish/",
+        historyApiFallback: true,
+        inline: true
     },
     module: {
         rules: [{

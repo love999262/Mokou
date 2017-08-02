@@ -10,21 +10,11 @@ Due to the old project [moe](https://github.com/love999262/moe) use to much unne
 $ npm install
 ```
 
-- gulp 
+- npm run dev
 
 ```
-$ gulp
-```
-
-- gulp webpack
-
-```
-$ gulp webpack
-```
-- webpack 
-
-```
-webpack
+http://localhost:8080/webpack-dev-server/index.html
+http://localhost:8080/index.html
 ```
 
 - change the website & searchEngines
