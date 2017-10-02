@@ -1,6 +1,7 @@
 let websites = {
     ACG: {
         bilibili: 'http://www.bilibili.com',
+        niconico: 'http://www.nicovideo.jp/',
         u2b: 'https://www.youtube.com/',
         steam: 'http://store.steampowered.com/',
         steamCN: 'https://steamcn.com/forum.php',
@@ -15,7 +16,7 @@ let websites = {
         tineye: 'https://www.tineye.com/',
         Tbus: 'http://games.tgbus.com/pspcn/',
         dilidili: 'http://www.dilidili.wang/',
-        osu: 'https://osu.ppy.sh/',
+        osu: 'https://osu.ppy.sh/home',
         sankakucomplex: 'https://chan.sankakucomplex.com/',
         hacg: 'https://www.hacg.fi/',
         steamcard: 'http://www.steamcardexchange.net/'
@@ -33,9 +34,10 @@ let websites = {
     Techonology: {
         github: 'https://github.com/love999262',
         gitbooks: 'https://www.gitbook.com/',
+        bandwagon: 'https://bwh1.net/',
         stackoverflow: 'http://stackoverflow.com/',
         typescript: 'https://www.typescriptlang.org/',
-        tscndoc: 'https://www.tslang.cn/docs/tutorial.html',
+        tscn: 'https://www.tslang.cn/',
         w3schools: 'http://www.w3schools.com/',
         '$.api': 'http://api.jquery.com/',
         jshint: 'http://jshint.com/',
@@ -46,7 +48,7 @@ let websites = {
         nodejscn: 'http://nodejs.cn/',
         vue: 'http://cn.vuejs.org/v2/api/',
         webpackDoc: 'http://webpack.github.io/docs/',
-        React: 'http://reactjs.cn/react/docs/getting-started.html',
+        React: 'https://facebook.github.io/react/',
         pythonDoc: 'https://docs.python.org/3/',
         owasp: 'https://www.owasp.org'
 
@@ -68,12 +70,16 @@ let websites = {
         washingtonpost: 'http://www.washingtonpost.com/',
         wsj: 'http://www.wsj.com/',
         nydailynews: 'http://www.nydailynews.com/',
+        reddit: 'https://www.reddit.com/',
+        imdb: 'http://www.imdb.com/',
         nypost: 'http://www.nypost.com/'
     },
     Others: {
         exmail: 'https://exmail.qq.com/',
         hotmail: 'https://outlook.live.com/owa/',
+        xvcams: 'http://xvcams.com',
         icloud: 'https://www.icloud.com',
+        myfreecams: 'https://www.myfreecams.com/',
         gmail: 'https://mail.google.com/mail/u/0/#inbox',
         'iconfont.cn': 'http://www.iconfont.cn/',
         tinypng: 'https://tinypng.com/',
