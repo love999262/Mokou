@@ -24,6 +24,8 @@ let websites = {
     SNS: {
         weibo: 'http://weibo.com/',
         zhihu: 'https://www.zhihu.com/',
+        wx: 'https://wx.qq.com/',
+        t66y: 'https://t66y.com/index.php',
         quora: 'https://www.quora.com/#',
         douban: 'https://www.douban.com/',
         twitter: 'https://twitter.com/',
