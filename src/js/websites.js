@@ -3,6 +3,7 @@ let websites = {
         bilibili: 'http://www.bilibili.com',
         niconico: 'http://www.nicovideo.jp/',
         u2b: 'https://www.youtube.com/',
+        tumblr: 'https://www.tumblr.com/',
         steam: 'http://store.steampowered.com/',
         steamCN: 'https://steamcn.com/forum.php',
         bangumi: 'http://bangumi.tv/',
