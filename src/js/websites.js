@@ -19,7 +19,7 @@ let websites = {
         dilidili: 'http://www.dilidili.wang/',
         osu: 'https://osu.ppy.sh/home',
         sankakucomplex: 'https://chan.sankakucomplex.com/',
-        hacg: 'https://www.hacg.fi/',
+        hacg: 'https://www.llss.fun/',
         steamcard: 'http://www.steamcardexchange.net/'
     },
     SNS: {
