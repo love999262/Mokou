@@ -2,7 +2,7 @@ const Template = require('./template.js');
 
 class Navigator {
     constructor() {
-        this.prefix = 'mokou';
+        this.prefix = 'mokou-search';
         this.searchInterface = 'https://www.google.com/search?newwindow=1&q=';
         this.searchBtnHref = 'https://www.google.com/';
         this.template = new Template();
@@ -11,10 +11,10 @@ class Navigator {
         this.$websites = this.template.getWebsites();
     }
     reseloveSearchEngines(searchEngines) {
-        this._template.$_defbtn = $('<button class="mokou-search-bar-container-btn">' + searchEngines[0].name + '</button>');
-        this._template.$_dropmenu = $('<ul class="mokou-search-bar-container-dropmenu" style="display:none;"></ul>');
+        this._template.$_defbtn = $(`<button class="${this.prefix}-bar-container-btn">${searchEngines[0].name}</button>`);
+        this._template.$_dropmenu = $(`<ul class="${this.prefix}-bar-container-dropmenu" style="display:none;"></ul>`);
         for (let i = 0; i < searchEngines.length; i++) {
-            let $_list = $('<li class="mokou-search-bar-container-dropmenu-searchengine">' + searchEngines[i].name + '</li>');
+            let $_list = $(`<li class="${this.prefix}-bar-container-dropmenu-searchengine">${searchEngines[i].name}</li>`);
             $_list.on('click', () => {
                 this._template.$_defbtn.html(searchEngines[i].name);
                 this.searchInterface = searchEngines[i].url;
@@ -23,9 +23,9 @@ class Navigator {
             });
             this._template.$_dropmenu.append($_list);
         }
-        this._template.$_choice = $('<button class="mokou-search-bar-container-panel"></button>');
-        this._template.$_inputbox = $('<input type="text" class="mokou-search-bar-input" placeholder="Open The Door To A Whole New World!!!">');
-        this._template.$_searchBtn = $('<btn class="mokou-search-bar-btn" style="background-color:' + this.getRandomColor() + '"></btn>');
+        this._template.$_choice = $(`<button class="${this.prefix}-bar-container-panel"></button>`);
+        this._template.$_inputbox = $(`<input type="text" class="${this.prefix}-bar-input" placeholder="Open The Door To A Whole New World!!!">`);
+        this._template.$_searchBtn = $(`<btn class="${this.prefix}-bar-btn" style="background-color:${this.getRandomColor()}"></btn>`);
         this.$searchBar.append(this._template.$_defbtn);
         this.$searchBar.append(this._template.$_dropmenu);
         this.$searchBar.append(this._template.$_choice);
@@ -36,11 +36,11 @@ class Navigator {
 
     resolveWebsites(websites) {
         for (let i in websites) {
-            this._template.$_nav = $('<ul class="mokou-search-panel-nav"></ul>');
-            this._template.$_title = $('<li class="mokou-search-panel-nav-list-title" style="background-color:' + this.getRandomColor() + '">' + i + '</li>');
+            this._template.$_nav = $(`<ul class="${this.prefix}-panel-nav"></ul>`);
+            this._template.$_title = $(`<li class="${this.prefix}-panel-nav-list-title" style="background-color:${this.getRandomColor()}">${i}</li>`);
             this._template.$_nav.append(this._template.$_title);
             for (let j in websites[i]) {
-                let $_list = $('<li class="mokou-search-panel-nav-list">' + j + '</li>');
+                let $_list = $(`<li class="${this.prefix}-panel-nav-list">${j}</li>`);
                 $_list.on('click', () => {
                     window.open(websites[i][j]);
                 });
