@@ -51,14 +51,21 @@ class Makou {
                     if ($('.' + this.prefix + '-search-bar-input').is(':focus')) {
                         this.navigator.ifSearch($('.' + this.prefix + '-search-bar-input').val());
                     }
+                    this.setFoucs();
                     break;
                 case 192:
                     if ($('.' + this.prefix + '-search-bar-input').is(':focus') === false) {
                         this.setBackGround(this.totalpicLength, this.isLocalPic);
                     }
                     break;
+                default:
+                    this.setFoucs();
             }
         });
+    }
+
+    setFoucs() {
+        $(`.${this.prefix}-search-bar-input`).focus();
     }
 
     setMokou() {

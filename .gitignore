@@ -6,6 +6,5 @@ node_modules/*
 images/
 mp4/*
 *idea/*
-src/js/websites.js
 publish/mokou.min.js
 publish/mokou.min.js.map
