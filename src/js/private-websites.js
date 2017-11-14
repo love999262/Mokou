@@ -3,6 +3,8 @@ let websites = {
         bilibili: 'http://www.bilibili.com',
         niconico: 'http://www.nicovideo.jp/',
         u2b: 'https://www.youtube.com/',
+        '4chan': 'http://www.4chan.org/',
+        '2chan': 'http://www.2chan.net/',
         tumblr: 'https://www.tumblr.com/',
         steam: 'http://store.steampowered.com/',
         steamCN: 'https://steamcn.com/forum.php',
@@ -25,6 +27,7 @@ let websites = {
     SNS: {
         weibo: 'http://weibo.com/',
         zhihu: 'https://www.zhihu.com/',
+        twitch: 'https://go.twitch.tv/',
         wx: 'https://wx.qq.com/',
         t66y: 'https://t66y.com/index.php',
         quora: 'https://www.quora.com/#',
@@ -36,6 +39,7 @@ let websites = {
     },
     Techonology: {
         github: 'https://github.com/love999262',
+        speedtest: 'http://www.speedtest.net/',
         gitbooks: 'https://www.gitbook.com/',
         bandwagon: 'https://bwh1.net/',
         stackoverflow: 'http://stackoverflow.com/',
@@ -80,6 +84,7 @@ let websites = {
     Others: {
         exmail: 'https://exmail.qq.com/',
         hotmail: 'https://outlook.live.com/owa/',
+        reddit: 'https://www.reddit.com/',
         xvcams: 'http://xvcams.com',
         icloud: 'https://www.icloud.com',
         myfreecams: 'https://www.myfreecams.com/',
@@ -88,7 +93,9 @@ let websites = {
         tinypng: 'https://tinypng.com/',
         giphy: 'http://giphy.com/',
         alexa: 'http://www.alexa.com/',
-        qiniu: 'https://portal.qiniu.com/'
+        qiniu: 'https://portal.qiniu.com/',
+        v2porn: 'http://email.v2dizhi.at.gmail.com.wvp2.space/',
+        '91pron': 'http://91porn.com/index.php'
     }
 };
 
