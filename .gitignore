@@ -8,3 +8,5 @@ mp4/*
 *idea/*
 src/js/websites.js
 src/js/private-websites.js
+publish/mokou.min.js
+publish/mokou.min.js.map
