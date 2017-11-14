@@ -2,7 +2,8 @@ require('./scss/reset.scss');
 require('./scss/mokou.scss');
 require('./scss/navigator.scss');
 const Navigator = require('./js/navigator.js');
-const websites = require('./js/websites.js');
+const privateWebsites = require('./js/private-websites.js');
+const publicWebsites = require('./js/websites.js');
 const searchEngines = require('./js/searchEngines.js');
 const Template = require('./js/template.js');
 // const ripples = require('./jquery.ripples.js');
@@ -22,6 +23,7 @@ class Mokou {
         this.navigator = new Navigator();
         let $search = $(`.${this.prefix}-search`);
         let $_searchEngines = this.navigator.reseloveSearchEngines(searchEngines.list);
+        const websites = privateWebsites && (privateWebsites.ACG ? privateWebsites : publicWebsites);
         let $_websites = this.navigator.resolveWebsites(websites);
         $search.append($_searchEngines);
         $search.append($_websites);
