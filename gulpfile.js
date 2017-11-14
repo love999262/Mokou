@@ -11,7 +11,7 @@ const paths = {
     css: ['./src/css/*.css']
 };
 
-gulp.task("scss", function() {
+gulp.task('scss', function() {
     return gulp.src(paths.scss)
         .pipe(sass().on('error', sass.logError))
         .pipe(gulp.dest('./src/css/'));
@@ -23,7 +23,7 @@ gulp.task('lint', function() {
         .pipe(eslint.format());
 });
 
-gulp.task('webpack',['lint'], function() {
+gulp.task('webpack', ['lint'], function() {
     webpack(webpackConfig, function(err, stats) {
         if (err) {
             console.log(err);

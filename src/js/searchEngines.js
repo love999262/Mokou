@@ -1,6 +1,6 @@
 let searchEngines = {
-    list: [{ 'name': 'google', 'url': 'https://www.google.com/search?newwindow=1&q=', 'href': 'https://www.google.com/' },
-    { 'name': 'googlehk', 'url': 'https://www.google.com.hk/search?q=', 'href': 'https://www.google.com.hk/' },
+    list: [{ 'name': 'google', 'url': 'https://www.google.com/ncr/search?newwindow=1&q=', 'href': 'https://www.google.com/ncr/' },
+    { 'name': 'googlehk', 'url': 'https://www.google.com.hk/ncr/search?q=', 'href': 'https://www.google.com.hk/ncr/' },
     { 'name': 'baidu', 'url': 'https://www.baidu.com/s?wd=', 'href': 'https://www.baidu.com/' }, {
         'name': 'MDN',
         'url': 'https://developer.mozilla.org/zh-CN/search?q=',

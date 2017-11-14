@@ -1,4 +1,4 @@
-let websites = {
+let publicWebsites = {
     ACG: {
         bilibili: 'http://www.bilibili.com',
         niconico: 'http://www.nicovideo.jp/',
@@ -99,4 +99,4 @@ let websites = {
     }
 };
 
-module.exports = websites;
+module.exports = publicWebsites;

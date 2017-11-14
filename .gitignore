@@ -6,3 +6,5 @@ node_modules/*
 images/
 mp4/*
 *idea/*
+src/js/websites.js
+src/js/private-websites.js
