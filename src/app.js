@@ -33,7 +33,9 @@ class Mokou {
     addEvents() {
         // global event listener
         this.$TPL.on('click', (e) => {
+            console.log(e);
             (e.target.className.toLowerCase() === `${this.prefix}-search-bar-container-panel` && e.target.nodeName.toLowerCase() === 'button') || $(`.${this.prefix}-search-bar-container-dropmenu`).hide();
+            (e.target.className.toLowerCase() === `${this.prefix}-search-bar-container-panel` && e.target.nodeName.toLowerCase() === 'button') || (e.target.className.toLowerCase() === `${this.prefix}-search-bar-container-dropmenu-searchengine`) || (e.target.className.toLowerCase() === `${this.prefix}-search-bar-search-history`) || (e.target.className.toLowerCase() === `${this.prefix}-search-bar-search-history-list`) || (e.target.className.toLowerCase() === `${this.prefix}-search-bar-input`) || this.navigator.hideSearchHistoryPanel();
             if($(e.target).hasClass(`${this.prefix}-search-bar-btn`)) {
                 this.navigator.ifSearch($(`.${this.prefix}-search-bar-input`).val());
             }
@@ -42,6 +44,10 @@ class Mokou {
             }
             if($(e.target).hasClass(`${this.prefix}-search-bar-container-panel`)) {
                 $(`.${this.prefix}-search-bar-container-dropmenu`).toggle();
+            }
+            if($(e.target).hasClass(`${this.prefix}-search-bar-search-history-list`)) {
+                // console.log(e.target);
+                this.navigator.ifSearch($(e.target).text());
             }
         });
         $(document).on('keydown', (e) => {
@@ -64,6 +70,14 @@ class Mokou {
                     this.setFoucs();
             }
         });
+        $(`.${this.prefix}-search-bar-input`).on('focus', (e) => {
+            e = e || event;
+            this.navigator.getSearchHistoryPanel();
+        });
+        // $(`.${this.prefix}-search-bar-input`).on('blur', (e) => {
+        //     e = e || event;
+        //     // this.navigator.hideSearchHistoryPanel();
+        // });
     }
 
     setFoucs() {

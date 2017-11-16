@@ -95,6 +95,30 @@
                     border-color: $btn-active-border-color;
                 }
             }
+            &-search-history {
+                display: none;
+                width: 560px;
+                left: 90px;
+                position: absolute;
+                top: 46px;
+                background: rgba(255,255,255,.9);
+                @include setShadow;
+                z-index: 99;
+                overflow: hidden;
+                &-list{
+                    color: $dark;
+                    text-align: left;
+                    text-indent: .5rem;
+                    border-bottom: 1px solid $gray;
+                    height: 32px;
+                    line-height: 32px;
+                    &:hover {
+                        background-color: $b-blue;
+                        color: $white;
+                        cursor: pointer;
+                    }
+                }
+            }
         }
         &-panel {
             // @include setShadow;
