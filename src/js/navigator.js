@@ -25,7 +25,7 @@ class Navigator {
             this._template.$_dropmenu.append($_list);
         }
         this._template.$_choice = $(`<button class="${this.prefix}-bar-container-panel"></button>`);
-        this._template.$_inputbox = $(`<input type="text" class="${this.prefix}-bar-input" placeholder="Open The Door To A Whole New World!!!">`);
+        this._template.$_inputbox = $(`<div><input type="text" class="${this.prefix}-bar-input" placeholder="Open The Door To A Whole New World!!!"></div>`);
         this._template.$_searchBtn = $(`<btn class="${this.prefix}-bar-btn" style="background-color:${this.getRandomColor()}"></btn>`);
         this._template.$searchHistory = $(`<ul class="${this.prefix}-bar-search-history"></ul>`);
         this.$searchBar.append(this._template.$_defbtn);
@@ -33,7 +33,7 @@ class Navigator {
         this.$searchBar.append(this._template.$_choice);
         this.$searchBar.append(this._template.$_inputbox);
         this.$searchBar.append(this._template.$_searchBtn);
-        this.$searchBar.append(this._template.$searchHistory);
+        this._template.$_inputbox.append(this._template.$searchHistory);
         return this.$searchBar;
     }
 
