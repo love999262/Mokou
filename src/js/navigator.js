@@ -74,7 +74,7 @@ class Navigator {
             console.log(this.searchArray);
             let _searchList = '';
             for(let i = 0; i < this.searchArray.length; i++) {
-                _searchList += `<li class="${this.prefix}-bar-search-history-list">${this.searchArray[i]}</li>`;
+                _searchList += `<li class="${this.prefix}-bar-search-history-list" title="${this.searchArray[i]}">${this.searchArray[i]}</li>`;
             }
             this._template.$searchHistory.html(_searchList);
         }

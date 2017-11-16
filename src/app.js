@@ -35,7 +35,7 @@ class Mokou {
         this.$TPL.on('click', (e) => {
             console.log(e);
             (e.target.className.toLowerCase() === `${this.prefix}-search-bar-container-panel` && e.target.nodeName.toLowerCase() === 'button') || $(`.${this.prefix}-search-bar-container-dropmenu`).hide();
-            (e.target.className.toLowerCase() === `${this.prefix}-search-bar-search-history`) || (e.target.className.toLowerCase() === `${this.prefix}-search-bar-search-history-list`) || (e.target.className.toLowerCase() === `${this.prefix}-search-bar-input`) || this.navigator.hideSearchHistoryPanel();
+            (e.target.className.toLowerCase() === `${this.prefix}-search-bar-container-panel` && e.target.nodeName.toLowerCase() === 'button') || (e.target.className.toLowerCase() === `${this.prefix}-search-bar-container-dropmenu-searchengine`) || (e.target.className.toLowerCase() === `${this.prefix}-search-bar-search-history`) || (e.target.className.toLowerCase() === `${this.prefix}-search-bar-search-history-list`) || (e.target.className.toLowerCase() === `${this.prefix}-search-bar-input`) || this.navigator.hideSearchHistoryPanel();
             if($(e.target).hasClass(`${this.prefix}-search-bar-btn`)) {
                 this.navigator.ifSearch($(`.${this.prefix}-search-bar-input`).val());
             }
