@@ -6,6 +6,7 @@ const privateWebsites = require('./js/private-websites.js');
 const publicWebsites = require('./js/websites.js');
 const searchEngines = require('./js/searchEngines.js');
 const Template = require('./js/template.js');
+const isLocal = require('./js/islocal.js');
 // const ripples = require('./jquery.ripples.js');
 
 class Mokou {
@@ -18,7 +19,7 @@ class Mokou {
         this.totalpicLength = 713;
         this.setMokou();
         this.setIcon(`${this.qiniu}mokou.ico`);
-        this.isLocalPic = true;
+        this.isLocalPic = isLocal;
         this.setBackGround(this.totalpicLength, this.isLocalPic); // total, islocal
         this.navigator = new Navigator();
         let $search = $(`.${this.prefix}-search`);
