@@ -10,6 +10,7 @@ class Navigator {
         this._template = {};
         this.$searchBar = this.template.getSearchBar();
         this.$websites = this.template.getWebsites();
+        this.curDate = new Date().toLocaleString();
         this.searchArray = [];
     }
     reseloveSearchEngines(searchEngines) {
@@ -66,6 +67,7 @@ class Navigator {
             }
         }
         this.searchArray.push(_val);
+        localStorage.setItem(`${this.curDate}history`, JSON.stringify(this.searchArray));
         this.getSearchHistoryPanel();
     }
 
