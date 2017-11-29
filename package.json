@@ -29,11 +29,11 @@
     "webpack-dev-server": "^2.6.1"
   },
   "scripts": {
-    "dev": "webpack-dev-server",
-    "build": "webpack",
-    "watch": "webpack --watch",
-    "build-patch": "npm version patch && npm run build",
-    "build-minor": "npm version minor && npm run build",
-    "build-major": "npm version major && npm run build"
+    "dev": "NODE_ENV=dev webpack-dev-server --inline",
+    "build": "NODE_ENV=build webpack",
+    "watch": "NODE_ENV=watch webpack --watch",
+    "build-patch": "NODE_ENV=build npm version patch && npm run build",
+    "build-minor": "NODE_ENV=build npm version minor && npm run build",
+    "build-major": "NODE_ENV=build npm version major && npm run build"
   }
 }

@@ -1,7 +1,37 @@
 const webpack = require('webpack');
 const path = require('path');
-
-module.exports = {
+const env = process.env.NODE_ENV;
+const plugins = env === 'build' ? [
+    new webpack.optimize.UglifyJsPlugin({
+        sourceMap: true,
+        compress: {
+            warnings: false,
+            drop_debugger: true,
+            drop_console: true
+        }
+    }),
+    new webpack.ProvidePlugin({
+        $: "jquery",
+        jquery: "jquery",
+        "window.jQuery": "jquery",
+        jQuery: "jquery"
+    })
+] : [
+        new webpack.optimize.UglifyJsPlugin({
+            sourceMap: true,
+            compress: {
+                warnings: false,
+                drop_debugger: true,
+            }
+        }),
+        new webpack.ProvidePlugin({
+            $: "jquery",
+            jquery: "jquery",
+            "window.jQuery": "jquery",
+            jQuery: "jquery"
+        })
+    ];
+const config = {
     entry: {
         app: [
             path.resolve(__dirname, './src/app.js')
@@ -9,10 +39,10 @@ module.exports = {
     },
     output: {
         path: path.resolve(__dirname, 'publish'),
-        publicPath:"/assets/",
+        publicPath: "/assets/",
         filename: 'mokou.min.js'
     },
-    devtool: 'source-map',
+    devtool: (env === 'build') ? 'source-map' : 'eval-source-map',
     devServer: {
         contentBase: "./publish/",
         historyApiFallback: true,
@@ -48,20 +78,7 @@ module.exports = {
             loader: 'url-loader?limit=8192&name=[path][name].[ext]'
         }]
     },
-    plugins: [
-        new webpack.optimize.UglifyJsPlugin({
-            sourceMap: true,
-            compress: {
-                warnings: false,
-                drop_debugger: true,
-                // drop_console: true
-            }
-        }),
-        new webpack.ProvidePlugin({
-            $: "jquery",
-            jquery: "jquery",
-            "window.jQuery": "jquery",
-            jQuery: "jquery"
-        })
-    ]
+    plugins: plugins,
 };
+
+module.exports = config;

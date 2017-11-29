@@ -3,8 +3,9 @@ const Template = require('./template.js');
 class Navigator {
     constructor() {
         this.prefix = 'mokou-search';
-        this.searchInterface = 'https://www.google.com/search?newwindow=1&q=';
-        this.searchBtnHref = 'https://www.google.com/';
+        this.searchInterface = 'https://www.baidu.com/s?wd=';
+        this.searchBtnHref = 'https://www.baidu.com/';
+        this.searchBtnName = 'baidu';
         this.template = new Template();
         this._template = {};
         this.$searchBar = this.template.getSearchBar();
@@ -12,7 +13,7 @@ class Navigator {
         this.searchArray = [];
     }
     reseloveSearchEngines(searchEngines) {
-        this._template.$_defbtn = $(`<button class="${this.prefix}-bar-container-btn">${searchEngines[0].name}</button>`);
+        this._template.$_defbtn = $(`<button class="${this.prefix}-bar-container-btn">${this.searchBtnName}</button>`);
         this._template.$_dropmenu = $(`<ul class="${this.prefix}-bar-container-dropmenu" style="display:none;"></ul>`);
         for (let i = 0; i < searchEngines.length; i++) {
             let $_list = $(`<li class="${this.prefix}-bar-container-dropmenu-searchengine">${searchEngines[i].name}</li>`);

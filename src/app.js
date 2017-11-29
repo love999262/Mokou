@@ -19,12 +19,12 @@ class Mokou {
         this.totalpicLength = 713;
         this.setMokou();
         this.setIcon(`${this.qiniu}mokou.ico`);
-        this.isLocalPic = isLocal;
+        this.isLocalPic = (typeof isLocal === 'boolean') ? isLocal : false;
         this.setBackGround(this.totalpicLength, this.isLocalPic); // total, islocal
         this.navigator = new Navigator();
         let $search = $(`.${this.prefix}-search`);
         let $_searchEngines = this.navigator.reseloveSearchEngines(searchEngines.list);
-        const websites = privateWebsites && (privateWebsites.ACG ? privateWebsites : publicWebsites);
+        const websites = privateWebsites && (privateWebsites.视频 ? privateWebsites : publicWebsites);
         let $_websites = this.navigator.resolveWebsites(websites);
         $search.append($_searchEngines);
         $search.append($_websites);
